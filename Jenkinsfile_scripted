@@ -1,3 +1,4 @@
+    
 def container_name=product-app
 def container_tag=latest
 def dockerhubuser=mg2412
@@ -12,9 +13,7 @@ stage('checkout'){
 checkout scm
 }
 stage('compose up'){
-step{
 sh 'docker-compose -f /root/project_14-7/product-app/docker-compose.yaml up'
-}
 }
 
 }
