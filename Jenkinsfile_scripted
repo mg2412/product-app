@@ -3,6 +3,6 @@ stage('checkout'){
 checkout scm
 }
 stage('compose up'){
-sh 'docker-compose -f /root/project_14-7/product-app/docker-compose.yaml up'
+sh 'docker-compose -f docker-compose.yaml up'
 }
 }
